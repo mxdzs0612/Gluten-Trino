@@ -140,18 +140,26 @@ public final class GlutenAggregationNode
         private final boolean isDistinct;
         private final Optional<GlutenVariableReferenceExpression> mask;
 
+        private final GlutenFunctionHandle functionHandle;
+
+        private final List<GlutenRowExpression> arguments;
+
         @JsonCreator
         public Aggregation(@JsonProperty("call") GlutenCallExpression call,
                 @JsonProperty("filter") Optional<GlutenRowExpression> filter,
                 @JsonProperty("orderingScheme") Optional<GlutenOrderingScheme> orderingScheme,
                 @JsonProperty("isDistinct") boolean isDistinct,
-                @JsonProperty("mask") Optional<GlutenVariableReferenceExpression> mask)
+                @JsonProperty("mask") Optional<GlutenVariableReferenceExpression> mask,
+                @JsonProperty("functionHandle") GlutenFunctionHandle functionHandle,
+                @JsonProperty("arguments") List<GlutenRowExpression> arguments)
         {
             this.call = call;
             this.filter = filter;
             this.orderingScheme = orderingScheme;
             this.isDistinct = isDistinct;
             this.mask = mask;
+            this.functionHandle = functionHandle;
+            this.arguments = arguments;
         }
 
         @JsonProperty

@@ -35,9 +35,9 @@ EnumMap:
 
 ExtraFields:
 
-    Aggregation:
-      GlutenFunctionHandle: functionHandle
-      List<GlutenRowExpression>: arguments
+#    Aggregation:
+#      GlutenFunctionHandle: functionHandle
+#      List<GlutenRowExpression>: arguments
 
     GlutenPlanNode:
         PlanNodeId :         id
