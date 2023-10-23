@@ -193,7 +193,7 @@ public final class GlutenAggregationNode
         }
 
         @JsonProperty
-        public GlutenFunctionHandle getGlutenFunctionHandle()
+        public GlutenFunctionHandle getFunctionHandle()
         {
             return functionHandle;
         }
