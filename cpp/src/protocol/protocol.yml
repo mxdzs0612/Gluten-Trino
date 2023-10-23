@@ -37,7 +37,7 @@ ExtraFields:
 
     Aggregation:
       GlutenFunctionHandle: functionHandle
-      List<RowExpression>: arguments
+      List<GlutenRowExpression>: arguments
 
     GlutenPlanNode:
         PlanNodeId :         id
