@@ -191,5 +191,17 @@ public final class GlutenAggregationNode
         {
             return mask;
         }
+
+        @JsonProperty
+        public GlutenFunctionHandle getGlutenFunctionHandle()
+        {
+            return functionHandle;
+        }
+
+        @JsonProperty
+        public List<GlutenRowExpression> getArguments()
+        {
+            return arguments;
+        }
     }
 }
