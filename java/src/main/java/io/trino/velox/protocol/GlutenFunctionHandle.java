@@ -18,7 +18,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "@type")
 @JsonSubTypes({@JsonSubTypes.Type(value = GlutenBuiltInFunctionHandle.class, name = "static"),
-        @JsonSubTypes.Type(value = GlutenSqlFunctionHandle.class, name = "json_file"),})
+        @JsonSubTypes.Type(value = GlutenSqlFunctionHandle.class, name = "json_file")
+})
 public interface GlutenFunctionHandle
 {
 }
